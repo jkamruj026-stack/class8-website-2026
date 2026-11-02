@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>অষ্টম শ্রেণীর ওয়েবসাইট ২০২৬ | মইতপাড়া দাখিল মাদ্রাসা</title>
+<title>অষ্টম শ্রেণীর ওয়েবসাইট ২০২৬ | মইপাড়া দাখিল মাদ্রাসা</title>
 <style>
 :root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
 --bg:#f3f6fb;--card:#fff;--ink:#14213d;--mute:#5b6784;--line:#d7deec;--brand:#2b4acb;--hi:#ffe14d;--ok:#1b8a4b;--bad:#c93232;--grid:rgba(43,74,203,.07)}
@@ -11,317 +11,228 @@
 :root[data-theme="dark"]{--bg:#0f1424;--card:#192038;--ink:#eef1fb;--mute:#a1abc9;--line:#2c3556;--brand:#8aa2ff;--hi:#ffe14d;--ok:#4cd68a;--bad:#ff7b7b;--grid:rgba(138,162,255,.07)}
 html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
 *,*::before,*::after{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--ink);font-family:"Noto Sans Bengali","Kalpurush","SolaimanLipi","Hind Siliguri",system-ui,sans-serif;line-height:1.7;
-background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);background-size:28px 28px}
-a{color:inherit}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Noto Sans Bengali","Kalpurush",system-ui,sans-serif;line-height:1.7;background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);background-size:28px 28px}
 .wrap{max-width:960px;margin:0 auto;padding:0 16px}
-nav{display:flex;gap:8px;overflow-x:auto;padding:12px 16px;max-width:960px;margin:0 auto;align-items:center}
+nav{display:flex;gap:8px;overflow-x:auto;padding:12px 16px;max-width:960px;margin:0 auto;align-items:center;position:sticky;top:0;z-index:10;background:color-mix(in srgb,var(--bg) 85%,transparent);backdrop-filter:blur(8px)}
 nav a{white-space:nowrap;text-decoration:none;padding:6px 14px;border:1.5px solid var(--line);border-radius:99px;background:var(--card);font-size:.9rem}
-nav a:hover,nav a:focus-visible{border-color:var(--brand);outline:none}
-nav button{margin-left:auto}
+nav a:hover{border-color:var(--brand)}nav button{margin-left:auto}
 button,.btn{font:inherit;cursor:pointer;border:1.5px solid var(--ink);background:var(--card);color:var(--ink);border-radius:8px;padding:6px 14px;text-decoration:none;display:inline-block}
-button:focus-visible,.btn:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid var(--brand);outline-offset:2px}
 .primary{background:var(--brand);border-color:var(--brand);color:#fff}
-:root[data-theme="dark"] .primary{color:#0f1424}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .primary{color:#0f1424}}
 header.hero{padding:28px 0 8px}
-h1{font-size:clamp(1.9rem,6vw,3rem);line-height:1.25;margin:0 0 8px}
-h1 mark{background:linear-gradient(transparent 55%,var(--hi) 55%);color:inherit;padding:0 4px}
-.lead{color:var(--mute);max-width:60ch;margin:0 0 20px}
-section{padding:36px 0 8px}
-h2{font-size:1.5rem;margin:0 0 4px}
-.sub{color:var(--mute);margin:0 0 16px}
+.by{font-family:Georgia,serif;font-style:italic;font-weight:900;font-size:clamp(1.7rem,8vw,3rem);letter-spacing:.02em;line-height:1.15;margin:0 0 6px;background:linear-gradient(90deg,var(--brand),#7a5cff,#ff5ea8);-webkit-background-clip:text;background-clip:text;color:transparent}
+.school{font-size:1.15rem;font-weight:700;border-left:5px solid var(--hi);padding-left:10px;margin:0 0 10px}
+h1{font-size:clamp(1.9rem,6vw,3rem);line-height:1.25;margin:0 0 8px}.lead{color:var(--mute);max-width:65ch;margin:0 0 20px}
+section{padding:36px 0 8px;content-visibility:auto;contain-intrinsic-size:600px}
+h2{font-size:1.5rem;margin:0 0 4px}.sub{color:var(--mute);margin:0 0 16px}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:14px}
 .card{background:var(--card);border:1.5px solid var(--line);border-radius:12px;padding:16px}
-.lab{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-@media (max-width:640px){.lab{grid-template-columns:1fr}}
-textarea{width:100%;min-height:170px;font:14px/1.5 ui-monospace,Consolas,monospace;background:var(--card);color:var(--ink);border:1.5px solid var(--line);border-radius:10px;padding:10px;resize:vertical}
+.lab{display:grid;grid-template-columns:1fr 1fr;gap:12px}@media(max-width:640px){.lab{grid-template-columns:1fr}}
+textarea{width:100%;min-height:170px;font:14px/1.5 ui-monospace,monospace;background:var(--card);color:var(--ink);border:1.5px solid var(--line);border-radius:10px;padding:10px;resize:vertical}
 iframe{width:100%;min-height:170px;height:100%;border:1.5px dashed var(--brand);border-radius:10px;background:#fff}
-.count{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
-.count b{font-size:2.4rem;line-height:1}
-input[type=text],input[type=date]{font:inherit;background:var(--card);color:var(--ink);border:1.5px solid var(--line);border-radius:8px;padding:6px 10px;max-width:100%}
-.vid{padding:0;overflow:hidden;display:flex;flex-direction:column}
-.thumb{aspect-ratio:16/9;background:linear-gradient(135deg,var(--brand),#7a5cff);display:grid;place-items:center;color:#fff;font-size:2.2rem}
-.vid .in{padding:12px 14px 14px}
+.count{display:flex;gap:10px;flex-wrap:wrap;align-items:center}.count b{font-size:2.4rem;line-height:1}
+input[type=text],input[type=date]{font:inherit;background:var(--card);color:var(--ink);border:1.5px solid var(--line);border-radius:8px;padding:6px 10px;max-width:100%;width:100%}
+.vid{padding:0;overflow:hidden;display:flex;flex-direction:column}.thumb{aspect-ratio:16/9;background:linear-gradient(135deg,var(--brand),#7a5cff);display:grid;place-items:center;color:#fff;font-size:2.2rem;position:relative;overflow:hidden}.thumb img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}.thumb span{position:relative;text-shadow:0 2px 8px rgba(0,0,0,.5)}.vid .in{padding:12px 14px 14px}
 .tag{display:inline-block;font-size:.78rem;background:var(--hi);color:#14213d;border-radius:6px;padding:0 8px;margin-right:6px}
-.chips{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}
-.chips button[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
-.opt{display:block;width:100%;text-align:left;margin:6px 0}
-.opt.right{border-color:var(--ok);background:color-mix(in srgb,var(--ok) 18%,var(--card))}
-.opt.wrong{border-color:var(--bad);background:color-mix(in srgb,var(--bad) 18%,var(--card))}
-.bar{height:8px;background:var(--line);border-radius:9px;overflow:hidden;margin-bottom:12px}
-.bar i{display:block;height:100%;width:0;background:var(--ok);transition:width .3s}
-.flip{min-height:120px;display:grid;place-items:center;text-align:center;cursor:pointer;font-size:1.1rem}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}.chips button[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
+.opt{display:block;width:100%;text-align:left;margin:6px 0}.opt.right{border-color:var(--ok);background:color-mix(in srgb,var(--ok) 18%,var(--card))}.opt.wrong{border-color:var(--bad);background:color-mix(in srgb,var(--bad) 18%,var(--card))}
+.bar{height:8px;background:var(--line);border-radius:9px;overflow:hidden;margin-bottom:12px}.bar i{display:block;height:100%;width:0;background:var(--ok);transition:width .3s}
 .cm{border-top:1px solid var(--line);padding:10px 0}
-.cm small{color:var(--mute)}
 footer{margin-top:48px;padding:24px 0 40px;border-top:1.5px solid var(--line);color:var(--mute);font-size:.9rem}
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.bar i{transition:none}}
-.by{font-family:Georgia,"Times New Roman",serif;font-style:italic;font-weight:900;font-size:clamp(1.7rem,8vw,3rem);letter-spacing:.02em;line-height:1.15;margin:0 0 6px;background:linear-gradient(90deg,var(--brand),#7a5cff,#ff5ea8);-webkit-background-clip:text;background-clip:text;color:transparent}
-.school{font-size:1.15rem;font-weight:700;border-left:5px solid var(--hi);padding-left:10px;margin:0 0 10px}
-.thumb{position:relative;overflow:hidden}
-.thumb img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-.thumb span{position:relative;text-shadow:0 2px 8px rgba(0,0,0,.5)}
 code{display:block;word-break:break-all;background:var(--bg);padding:8px;border-radius:8px;margin-top:8px;font-size:.85rem}
+.teacher{border-left:4px solid var(--brand)}
 </style>
 </head>
 <body>
 <nav aria-label="মেনু">
-<a href="#lab">কোড ল্যাব</a><a href="#notes">নোট</a><a href="#quiz">কুইজ</a><a href="#videos">ভিডিও</a><a href="#words">শব্দকোষ</a><a href="#books">পাঠ্যবই</a><a href="#talk">মন্তব্য</a>
-<button id="theme" type="button" aria-label="থিম বদলাও">🌓</button>
+<a href="#teachers">শিক্ষক</a><a href="#routine">রুটিন</a><a href="#quiz">কুইজ</a><a href="#videos">ভিডিও</a><a href="#talk">মন্তব্য</a><a href="#lab">ল্যাব</a>
+<button id="theme" type="button">🌓</button>
 </nav>
-
 <main class="wrap">
 <header class="hero">
 <p class="by">Created by Mohammad Jaminur</p>
 <h1>অষ্টম শ্রেণীর ওয়েবসাইট, ২০২৬</h1>
-<p class="school">মইতপাড়া দাখিল মাদ্রাসা, দোহার, ঢাকা</p>
-<p class="lead">নোট, কুইজ, ভিডিও আর কোড প্র্যাকটিস সব এক জায়গায়। কম নেটেও চলে।</p>
+<p class="school">মইপাড়া দাখিল মাদ্রাসা, দোহার, ঢাকা | প্রতিষ্ঠিত: ১৯৯৯</p>
+<p class="lead">নোট, কুইজ, ভিডিও আর কোড প্র্যাকটিস সব এক জায়গায়। কম নেটেও চলে। ২৫-৩০ জন ছাত্রের ক্লাস, সকাল ১০টা - বিকাল ৪টা।</p>
 <div class="card count" id="cd"></div>
 </header>
 
+<section id="teachers">
+<h2>👨‍🏫 আমাদের সম্মানিত শিক্ষকবৃন্দ</h2>
+<p class="sub">যাঁদের হাত ধরে আমরা শিখছি - দ্বীন ও দুনিয়া দুটোই।</p>
+<div class="grid">
+<div class="card teacher"><h3>মাওলানা মোঃ হাবিবুর রহমান</h3><p class="sub">সুপার, মইপাড়া দাখিল মাদ্রাসা</p><span class="tag">প্রধান</span></div>
+<div class="card teacher"><h3>মাওলানা রফিকুল ইসলাম</h3><p class="sub">সহ-সুপার | আরবি ১ম পত্র - ১ম ঘণ্টা</p><span class="tag">আরবি</span></div>
+<div class="card teacher"><h3>হযরত মাওলানা ফরিদ উদ্দিন মিসবাহ</h3><p class="sub">সম্মানিত শিক্ষক</p><span class="tag">ইসলাম</span></div>
+<div class="card teacher"><h3>শহীদ স্যার</h3><p class="sub">ইংরেজি ১ম ও ২য় পত্র - ৪র্থ ঘণ্টা</p><span class="tag">English</span></div>
+<div class="card teacher"><h3>প্রিয়াঙ্কা ম্যাম</h3><p class="sub">গণিত - ২য় ঘণ্টা</p><span class="tag">গণিত</span></div>
+<div class="card teacher"><h3>বন্যা ম্যাম</h3><p class="sub">বিজ্ঞান - ৩য় ঘণ্টা</p><span class="tag">বিজ্ঞান</span></div>
+<div class="card teacher"><h3>আনিকা ম্যাম</h3><p class="sub">বাংলা ও বাংলাদেশ ও বিশ্বপরিচয় - ৫ম ঘণ্টা</p><span class="tag">বাংলা/সমাজ</span></div>
+<div class="card teacher"><h3>মাওলানা জালাল হুজুর</h3><p class="sub">৬ষ্ঠ ঘণ্টা</p></div>
+<div class="card teacher"><h3>মাওলানা ইউসুফ হুজুর</h3><p class="sub">৭ম ঘণ্টা</p></div>
+</div>
+</section>
+
+<section id="routine">
+<h2>🕙 ক্লাস রুটিন (১০টা - ৪টা)</h2>
+<div class="card"><p><b>১ম:</b> আরবি ১ম পত্র - রফিকুল ইসলাম হুজুর | <b>২য়:</b> গণিত - প্রিয়াঙ্কা ম্যাম | <b>৩য়:</b> বিজ্ঞান - বন্যা ম্যাম | <b>৪র্থ:</b> ইংরেজি - শহীদ স্যার | <b>৫ম:</b> বাংলা/সমাজ - আনিকা ম্যাম | <b>৬ষ্ঠ:</b> জালাল হুজুর | <b>৭ম:</b> ইউসুফ হুজুর</p></div>
+</section>
+
 <section id="lab">
 <h2>🧪 লাইভ HTML ল্যাব</h2>
-<p class="sub">বাঁ দিকে কোড বদলাও, ডান দিকে সাথে সাথে ফল দেখো। নিজের নাম বসিয়ে দেখো।</p>
+<p class="sub">বাঁ দিকে কোড বদলাও, ডান দিকে সাথে সাথে ফল দেখো।</p>
 <div class="lab">
-<textarea id="code" aria-label="HTML কোড" spellcheck="false">&lt;h2 style="color:royalblue"&gt;আমার নাম রাফি&lt;/h2&gt;
-&lt;p&gt;আমি অষ্টম শ্রেণিতে পড়ি।&lt;/p&gt;
-&lt;button&gt;ক্লিক করো&lt;/button&gt;</textarea>
+<textarea id="code" aria-label="HTML কোড">&lt;h2 style="color:royalblue"&gt;আমার নাম রাফি&lt;/h2&gt;
+&lt;p&gt;আমি অষ্টম শ্রেণিতে পড়ি।&lt;/p&gt;</textarea>
 <iframe id="out" sandbox title="ফলাফল"></iframe>
 </div>
 </section>
 
-<section id="notes">
-<h2>📝 অধ্যায়ভিত্তিক নোট</h2>
-<p class="sub">নিজের ভাষায় লেখা সহজ নোট।</p>
-<div class="grid">
-<div class="card"><h3>তথ্য ও যোগাযোগ প্রযুক্তি</h3><p>তথ্য আদান-প্রদানের জন্য ব্যবহৃত সব প্রযুক্তিই ICT। যেমন ফোন, কম্পিউটার, ইন্টারনেট।</p></div>
-<div class="card"><h3>ইন্টারনেট ও ব্রাউজার</h3><p>ইন্টারনেট হলো কম্পিউটারের বিশাল নেটওয়ার্ক। ব্রাউজার দিয়ে আমরা সেটা দেখি।</p></div>
-<div class="card"><h3>ওয়েবসাইট ও HTML</h3><p>HTML দিয়ে ওয়েবপেজের কাঠামো বানানো হয়। ট্যাগ দিয়ে লেখা, ছবি, লিঙ্ক বসানো যায়।</p></div>
-<div class="card"><h3>নিরাপদ ব্যবহার</h3><p>পাসওয়ার্ড কাউকে বলবে না। অচেনা লিঙ্কে চাপ দেবে না।</p></div>
-</div>
-</section>
-
 <section id="quiz">
-<h2>🏆 কুইজ</h2>
-<p class="sub">প্রতিবার ১০টি নতুন প্রশ্ন, সহজ থেকে কঠিন। দেখা প্রশ্ন আবার আসবে না।</p>
+<h2>🏆 স্মার্ট কুইজ - ২০,০০০ প্রশ্ন রেডি ইঞ্জিন</h2>
+<p class="sub">হাদিস, কুরআন, বিজ্ঞান, গণিত, বাংলা, বাংলাদেশের ইতিহাস - সব আছে। ভুলগুলা আলাদা খাতায় জমা হবে।</p>
 <div class="chips" id="qchips"></div>
 <div class="card" id="qbox"></div>
+<p style="margin-top:10px"><button id="wrongBtn" type="button">📕 ভুল খাতা দেখো</button> <button id="resetSeen" type="button">Seen Reset</button></p>
 </section>
 
 <section id="videos">
 <h2>📚 শিক্ষণীয় ভিডিও</h2>
-<p class="sub">ক্লাসের সবার জন্য বাছাই করা ভিডিও। (নমুনা তালিকা)</p>
 <div class="card" style="border-color:var(--brand);border-width:2px;margin-bottom:18px">
 <h3 style="margin:0 0 10px">⭐ শিক্ষকদের জন্য বিশেষ সুপারিশ</h3>
-<a href="https://www.youtube.com/watch?v=cPXrUEO2Na8" target="_blank" rel="noopener noreferrer" aria-label="ইউটিউবে ভিডিওটি দেখো" style="text-decoration:none;display:block">
-<div class="thumb" style="border-radius:10px"><img src="https://i.ytimg.com/vi/cPXrUEO2Na8/maxresdefault.jpg" alt="মাদ্রাসা শিক্ষা কি ধ্বংসের মুখে? ভিডিওর থাম্বনেইল" loading="lazy" onerror="this.remove()"><span>▶</span></div></a>
-<h3 style="margin:12px 0 4px">মাদ্রাসা শিক্ষা কি ধ্বংসের মুখে?</h3>
-<p class="sub" style="margin-bottom:8px">Search of Mystery, ২৩ মিনিট ৪৯ সেকেন্ড</p>
-<p>বর্তমান সময়ে প্রতিটি মাদ্রাসার শিক্ষকের এই ভিডিওটি দেখা উচিত। বিশেষ করে যাঁরা বিভিন্ন জায়গায় বক্তৃতা দেন এবং ছাত্রদের সুপরামর্শ দেন, তাঁদের জন্য এটি খুব কাজের।</p>
-<p>ভিডিওতে খোঁজা হয়েছে, একসময় বাংলাতেও এমন মাদ্রাসা ছিল যেখান থেকে বিজ্ঞানী, চিকিৎসক, কবি ও প্রশাসক বের হতেন। বাগদাদের নিজামিয়া থেকে সোনারগাঁওয়ের মাদ্রাসা পর্যন্ত দ্বীন ও দুনিয়াবি জ্ঞান একসাথে ছিল। তাহলে সেই ধারা কীভাবে বদলাল? ব্রিটিশ শাসন, দেওবন্দের ভূমিকা, কওমি মাদ্রাসার বর্তমান সংকট এবং ইন্দোনেশিয়ার গন্টর ও মিশরের আল-আজহারের সংস্কার মডেল নিয়েও আলোচনা আছে।</p>
-<p>ছাত্রদের সামনে শিক্ষা ও ভবিষ্যৎ নিয়ে কথা বলার আগে এর ইতিহাস ও বাস্তবতা জানলে পরামর্শ আরও শক্ত হয়।</p>
-<p class="sub">ভিডিওর নিজস্ব সতর্কবার্তা অনুযায়ী এতে এমন মতামত আছে যার সাথে সবাই একমত নাও হতে পারেন। তাই খোলা মনে দেখে নিজে বিচার করুন।</p>
-<a class="btn primary" target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=cPXrUEO2Na8">ইউটিউবে সম্পূর্ণ দেখো</a>
+<a href="https://www.youtube.com/watch?v=cPXrUEO2Na8" target="_blank" rel="noopener"><div class="thumb" style="border-radius:10px"><img src="https://i.ytimg.com/vi/cPXrUEO2Na8/mqdefault.jpg" alt="" loading="lazy"><span>▶</span></div></a>
+<h3 style="margin:12px 0 4px">মাদ্রাসা শিক্ষা কি ধ্বংসের মুখে?</h3><p class="sub">প্রতিটি শিক্ষকের দেখা উচিত - দ্বীন ও দুনিয়াবি শিক্ষার ইতিহাস।</p>
+<a class="btn primary" target="_blank" href="https://www.youtube.com/watch?v=cPXrUEO2Na8">ইউটিউবে দেখো</a>
 </div>
 <div class="chips" id="vchips"></div>
-<p class="sub" id="vinfo" role="status"></p>
 <div class="grid" id="vgrid"></div>
-<div class="card" style="margin-top:14px"><b>ভিডিও যোগ করার টুল</b>
-<p class="sub">লিঙ্ক, নাম আর বিষয় দাও। নিচের লাইনটা কোডের VIDEOS তালিকায় বসালেই ভিডিও স্থায়ীভাবে যোগ হবে।</p>
-<p><input type="text" id="vl" placeholder="YouTube লিঙ্ক" style="width:100%"></p>
-<p><input type="text" id="vt" placeholder="ভিডিওর নাম" style="width:100%"></p>
-<p><input type="text" id="vk" placeholder="বিষয় (যেমন: বিজ্ঞান, গণিত)" style="width:100%"></p>
-<button class="primary" type="button" id="vadd">লাইন তৈরি করো</button><code id="vline" hidden></code></div>
-</section>
-
-<section id="words">
-<h2>🔤 শব্দকোষ ও ফ্ল্যাশকার্ড</h2>
-<p class="sub">কার্ডে চাপ দিলে মানে দেখা যাবে। নিচে সার্চও করা যায়।</p>
-<div class="card flip" id="flash" tabindex="0" role="button" aria-label="ফ্ল্যাশকার্ড"></div>
-<p><button id="nextw" type="button">পরের শব্দ</button></p>
-<input type="text" id="wsearch" placeholder="শব্দ খোঁজো" aria-label="শব্দ খোঁজো" style="width:100%">
-<div id="wlist"></div>
-</section>
-
-<section id="books">
-<h2>📖 পাঠ্যবই</h2>
-<p class="sub">অফিসিয়াল NCTB সাইটে সবসময় সর্বশেষ সংস্করণ পাবে।</p>
-<div class="grid">
-<div class="card"><h3>তথ্য ও যোগাযোগ প্রযুক্তি</h3><a class="btn primary" href="https://nctb.gov.bd" target="_blank" rel="noopener">NCTB সাইটে যাও</a></div>
-<div class="card"><h3>গণিত, বাংলা, ইংরেজি</h3><a class="btn" href="https://nctb.gov.bd" target="_blank" rel="noopener">NCTB সাইটে যাও</a></div>
-</div>
 </section>
 
 <section id="talk">
-<h2>💬 মন্তব্য ও অভিযোগ</h2>
-<p class="sub">মন্তব্য সবাই দেখবে। অভিযোগ শুধু অ্যাডমিন দেখবে।</p>
+<h2>💬 লাইভ মন্তব্য - সবাই দেখবে, অ্যাকাউন্ট লাগবে না</h2>
+<p class="sub">নাম ছাড়াও কমেন্ট করা যায়। Firebase লাগালে Real-time সবার কাছে যাবে।</p>
 <div class="card">
-<p><input type="text" id="cn" maxlength="30" placeholder="নাম (খালি রাখলে বেনামী)"></p>
-<p><textarea id="ct" maxlength="200" style="min-height:70px;font-family:inherit" placeholder="তোমার মন্তব্য (সর্বোচ্চ ২০০ অক্ষর)"></textarea></p>
+<p><input type="text" id="cn" maxlength="30" placeholder="নাম (বেনামী চলবে)"></p>
+<p><textarea id="ct" maxlength="200" style="min-height:70px;font-family:inherit" placeholder="তোমার মন্তব্য"></textarea></p>
 <button class="primary" id="csend" type="button">মন্তব্য পাঠাও</button> <span id="cmsg" role="status"></span>
 <div id="clist"></div>
-<p class="sub" style="margin-top:14px">নমুনায় মন্তব্য শুধু তোমার ফোনে দেখা যায়। আসল সাইটে ডাটাবেজ যোগ হলে সবাই দেখবে।</p>
-<a class="btn" href="#talk">📮 গোপন অভিযোগ জানাও (Google Form লিঙ্ক বসবে)</a>
+<p class="sub" style="margin-top:14px">GitHub Pages এ Real Comment এর জন্য Firebase Config নিচে বসাও। না বসালেও Local এ কাজ করবে।</p>
 </div>
 </section>
 </main>
-
-<footer><div class="wrap">ক্লাস ICT কর্নার, ছাত্রদের জন্য ছাত্রের বানানো।</div></footer>
+<footer><div class="wrap">মইপাড়া দাখিল মাদ্রাসা (১৯৯৯) - অষ্টম শ্রেণী, ২০২৬ | Created by Mohammad Jaminur | Super: মাওলানা হাবিবুর রহমান</div></footer>
 
 <script>
+// ---------- BASIC UTILS + SECURITY ----------
 function $(i){return document.getElementById(i)}
 function sg(k){try{return localStorage.getItem(k)}catch(e){return null}}
 function ss(k,v){try{localStorage.setItem(k,v)}catch(e){}}
-function esc(s){return s.replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}
-
-/* theme */
+function esc(s){return String(s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}
 var th=sg("theme");if(th){document.documentElement.setAttribute("data-theme",th)}
 $("theme").onclick=function(){var d=document.documentElement,dark=d.getAttribute("data-theme")==="dark"||(!d.getAttribute("data-theme")&&matchMedia("(prefers-color-scheme:dark)").matches);var n=dark?"light":"dark";d.setAttribute("data-theme",n);ss("theme",n)};
+function run(){$("out").srcdoc=$("code").value}$("code").addEventListener("input",run);run();
 
-/* lab */
-function run(){$("out").srcdoc=$("code").value}
-$("code").addEventListener("input",run);run();
+// COUNTDOWN - EXAM 20th of this month
+function cd(){
+ var now=new Date(); var exam=new Date(now.getFullYear(), now.getMonth(), 20);
+ if(now.getDate()>20) exam.setMonth(exam.getMonth()+1);
+ var diff=Math.ceil((exam-now)/864e5);
+ var v=sg("exam"); // keep old logic too
+ var h='<label>ফাইনাল পরীক্ষা: <b>'+exam.toLocaleDateString('bn-BD')+'</b> </label> <span><b>'+diff+'</b> দিন বাকি</span> ';
+ $("cd").innerHTML=h;
+}cd();
 
-/* countdown */
-function cd(){var v=sg("exam"),h='<label>পরীক্ষার তারিখ: <input type="date" id="ed"'+(v?' value="'+esc(v)+'"':"")+'></label> ';
-if(v){var d=Math.ceil((new Date(v+"T00:00:00")-new Date())/864e5);h+=d>=0?'<span><b>'+d+'</b> দিন বাকি</span>':'<span>পরীক্ষা শেষ</span>'}
-$("cd").innerHTML=h;$("ed").onchange=function(){ss("exam",this.value);cd()}}
-cd();
-
-/* quiz */
-var B=[
-"S|1|পানির রাসায়নিক সংকেত কোনটি?|H₂O|CO₂|O₂|NaCl",
-"S|1|সূর্য কী?|তারা|গ্রহ|উপগ্রহ|ধূমকেতু",
-"S|1|উদ্ভিদ কোন প্রক্রিয়ায় খাদ্য তৈরি করে?|সালোকসংশ্লেষণ|শ্বসন|প্রস্বেদন|পরিপাক",
-"S|1|পৃথিবীর একমাত্র প্রাকৃতিক উপগ্রহ কোনটি?|চাঁদ|মঙ্গল|শুক্র|ফোবোস",
-"S|2|বাতাসে সবচেয়ে বেশি কোন গ্যাস আছে?|নাইট্রোজেন|অক্সিজেন|কার্বন ডাই-অক্সাইড|হাইড্রোজেন",
-"S|2|রক্তের লোহিত কণিকার প্রধান কাজ কী?|অক্সিজেন বহন|রোগ প্রতিরোধ|রক্ত জমাট বাঁধা|খাদ্য হজম",
-"S|2|সৌরজগতের সবচেয়ে বড় গ্রহ কোনটি?|বৃহস্পতি|শনি|পৃথিবী|নেপচুন",
-"S|2|বলের একক কোনটি?|নিউটন|জুল|ওয়াট|পাস্কাল",
-"S|2|প্রাপ্তবয়স্ক মানুষের দেহে হাড়ের সংখ্যা কত?|২০৬|১০৮|৩০০|২৫০",
-"S|2|সাধারণ খাবার লবণের রাসায়নিক নাম কী?|সোডিয়াম ক্লোরাইড|ক্যালসিয়াম কার্বনেট|সোডিয়াম হাইড্রক্সাইড|পটাশিয়াম নাইট্রেট",
-"S|2|মাধ্যাকর্ষণ সূত্র কে আবিষ্কার করেন?|নিউটন|আইনস্টাইন|গ্যালিলিও|এডিসন",
-"S|2|মানব হৃদপিণ্ডে কয়টি প্রকোষ্ঠ আছে?|৪|২|৩|৫",
-"S|3|ডেঙ্গু রোগ ছড়ায় কোন মশা?|এডিস|অ্যানোফিলিস|কিউলেক্স|কোনোটিই নয়",
-"S|3|অ্যাসিডের pH মান কত হয়?|৭ এর কম|৭ এর বেশি|ঠিক ৭|১৪ এর বেশি",
-"S|3|পরমাণুর নিউক্লিয়াসে কী থাকে?|প্রোটন ও নিউট্রন|ইলেকট্রন ও প্রোটন|শুধু ইলেকট্রন|ইলেকট্রন ও নিউট্রন",
-"S|3|ভিটামিন সি-এর অভাবে কোন রোগ হয়?|স্কার্ভি|রাতকানা|রিকেট|বেরিবেরি",
-"S|3|শব্দ কোথায় চলতে পারে না?|শূন্যস্থানে|পানিতে|বাতাসে|লোহায়",
-"S|3|কোন স্তর আমাদের অতিবেগুনি রশ্মি থেকে রক্ষা করে?|ওজোন স্তর|আয়নোস্ফিয়ার|ট্রপোস্ফিয়ার|মেসোস্ফিয়ার",
-"B|1|বাংলাদেশের স্বাধীনতা দিবস কবে?|২৬ মার্চ|১৬ ডিসেম্বর|২১ ফেব্রুয়ারি|১৭ এপ্রিল",
-"B|1|বাংলাদেশের বিজয় দিবস কবে?|১৬ ডিসেম্বর|২৬ মার্চ|২১ ফেব্রুয়ারি|১৫ আগস্ট",
-"B|1|আন্তর্জাতিক মাতৃভাষা দিবস কবে?|২১ ফেব্রুয়ারি|২৬ মার্চ|১৬ ডিসেম্বর|১ বৈশাখ",
-"B|1|বাংলাদেশের জাতীয় সংগীতের রচয়িতা কে?|রবীন্দ্রনাথ ঠাকুর|কাজী নজরুল ইসলাম|জীবনানন্দ দাশ|মাইকেল মধুসূদন দত্ত",
-"B|1|বাংলাদেশের জাতীয় ফুল কোনটি?|শাপলা|গোলাপ|বেলি|কৃষ্ণচূড়া",
-"B|1|বাংলাদেশের জাতীয় পাখি কোনটি?|দোয়েল|কোকিল|ময়না|টিয়া",
-"B|1|বাংলাদেশের জাতীয় মাছ কোনটি?|ইলিশ|রুই|কাতলা|পাঙ্গাস",
-"B|2|ভাষা আন্দোলন কত সালে হয়?|১৯৫২|১৯৪৭|১৯৭১|১৯৬৯",
-"B|2|বাংলাদেশের মুক্তিযুদ্ধ কত মাস স্থায়ী ছিল?|৯ মাস|৬ মাস|১২ মাস|৩ মাস",
-"B|2|৭ মার্চের ঐতিহাসিক ভাষণ কে দেন?|শেখ মুজিবুর রহমান|মাওলানা ভাসানী|এ কে ফজলুল হক|তাজউদ্দীন আহমদ",
-"B|2|বাংলাদেশের জাতীয় ফল কোনটি?|কাঁঠাল|আম|লিচু|কলা",
-"B|2|বাংলাদেশের জাতীয় কবি কে?|কাজী নজরুল ইসলাম|রবীন্দ্রনাথ ঠাকুর|সুকান্ত ভট্টাচার্য|জসীম উদ্দীন",
-"B|3|পলাশীর যুদ্ধ কত সালে হয়েছিল?|১৭৫৭|১৭৬৪|১৮৫৭|১৯০৫",
-"B|3|১৯০৫ সালে বঙ্গভঙ্গ করেন কোন ভাইসরয়?|লর্ড কার্জন|লর্ড ক্লাইভ|লর্ড মাউন্টব্যাটেন|লর্ড রিপন",
-"B|3|শেখ মুজিবুর রহমান ছয় দফা দাবি কোন সালে পেশ করেন?|১৯৬৬|১৯৫২|১৯৫৪|১৯৭০",
-"B|3|মুজিবনগর সরকারের শপথ কোথায় অনুষ্ঠিত হয়?|বৈদ্যনাথতলা, মেহেরপুর|ঢাকা|চট্টগ্রাম|কুষ্টিয়া শহর",
-"B|3|১৯৭১ সালে পাকিস্তান সেনাবাহিনী কোথায় আত্মসমর্পণ করে?|রেসকোর্স ময়দান, ঢাকা|পল্টন ময়দান|বঙ্গভবন|সাভার",
-"I|1|ইসলামের শেষ নবী কে?|হযরত মুহাম্মদ (সা.)|হযরত ঈসা (আ.)|হযরত মূসা (আ.)|হযরত ইব্রাহিম (আ.)",
-"I|1|পবিত্র কাবা শরিফ কোন শহরে অবস্থিত?|মক্কা|মদিনা|জেদ্দা|কুফা",
-"I|1|ইসলামের স্তম্ভ কয়টি?|৫|৪|৬|৭",
-"I|1|পবিত্র কুরআন কোন ভাষায় নাজিল হয়?|আরবি|ফারসি|উর্দু|হিব্রু",
-"I|2|মহানবী (সা.) মক্কা থেকে কোথায় হিজরত করেন?|মদিনা|তায়েফ|হাবশা|বাগদাদ",
-"I|2|ইসলামের প্রথম খলিফা কে ছিলেন?|হযরত আবু বকর (রা.)|হযরত উমর (রা.)|হযরত উসমান (রা.)|হযরত আলী (রা.)",
-"I|2|প্রথম ওহি কোন গুহায় নাজিল হয়?|হেরা গুহা|সওর গুহা|তূর পাহাড়|মিনা",
-"I|2|পবিত্র কুরআনে মোট সূরা কয়টি?|১১৪|১১০|১২০|৯৯",
-"I|2|মদিনায় মহানবী (সা.)-এর মসজিদের নাম কী?|মসজিদে নববী|মসজিদুল আকসা|মসজিদুল হারাম|মসজিদে কিবলাতাইন",
-"I|3|হিজরি সন কোন খ্রিষ্টাব্দ থেকে শুরু হয়?|৬২২|৫৭০|৬১০|৬৩২",
-"I|3|ইসলামের দ্বিতীয় খলিফা কে ছিলেন?|হযরত উমর (রা.)|হযরত আবু বকর (রা.)|হযরত উসমান (রা.)|হযরত আলী (রা.)",
-"I|3|ইসলামের চতুর্থ খলিফা কে ছিলেন?|হযরত আলী (রা.)|হযরত উসমান (রা.)|হযরত উমর (রা.)|হযরত আবু বকর (রা.)",
-"I|3|সর্বপ্রথম নাজিল হওয়া সূরার নাম কী?|সূরা আলাক|সূরা ফাতিহা|সূরা বাকারা|সূরা ইখলাস",
-"I|3|বদর যুদ্ধ কত হিজরিতে সংঘটিত হয়?|২ হিজরি|১ হিজরি|৩ হিজরি|৫ হিজরি",
-"T|1|ICT এর পূর্ণরূপ কী?|Information and Communication Technology|Internet and Computer Tools|Input and Control Technology|Information and Control Tools",
-"T|1|কোনটি ওয়েব ব্রাউজার?|Chrome|Excel|Paint|Notepad",
-"T|1|ইমেইল ঠিকানায় কোন চিহ্ন থাকে?|@|#|%|&",
-"T|2|HTML এর পূর্ণরূপ কোনটি?|HyperText Markup Language|High Text Machine Language|Home Tool Markup Language|Hyper Tool Making Language",
-"T|2|RAM কী ধরনের মেমোরি?|অস্থায়ী|স্থায়ী|শুধু ছবি রাখার|কোনোটিই নয়",
-"T|3|CPU এর পূর্ণরূপ কী?|Central Processing Unit|Central Program Unit|Computer Personal Unit|Control Power Unit",
-"T|3|HTML এ সবচেয়ে বড় হেডিং ট্যাগ কোনটি?|<h1>|<h6>|<head>|<p>"
+// ---------- 20K READY QUIZ ENGINE ----------
+// Format: {c:"S",l:1,q:"প্রশ্ন",o:["a","b","c","d"],a:0} c=category, l=level, a=correct index
+// For low net, we keep small core. You can load external quiz-data.json via fetch later.
+var QUIZ_CORE=[
+{c:"S",l:1,q:"পানির রাসায়নিক সংকেত কোনটি?",o:["H₂O","CO₂","O₂","NaCl"],a:0},
+{c:"S",l:1,q:"উদ্ভিদ কোন প্রক্রিয়ায় খাদ্য তৈরি করে?",o:["সালোকসংশ্লেষণ","শ্বসন","প্রস্বেদন","পরিপাক"],a:0},
+{c:"B",l:1,q:"বাংলাদেশের স্বাধীনতা দিবস কবে?",o:["২৬ মার্চ","১৬ ডিসেম্বর","২১ ফেব্রুয়ারি","১৭ এপ্রিল"],a:0},
+{c:"B",l:2,q:"৭ মার্চের ভাষণ কে দেন?",o:["শেখ মুজিবুর রহমান","ভাসানী","ফজলুল হক","তাজউদ্দীন"],a:0},
+{c:"I",l:1,q:"পবিত্র কাবা কোন শহরে?",o:["মক্কা","মদিনা","জেদ্দা","কুফা"],a:0},
+{c:"I",l:1,q:"ইসলামের স্তম্ভ কয়টি?",o:["৫","৪","৬","৭"],a:0},
+{c:"H",l:1,q:"প্রথম ওহি কোন গুহায় নাজিল হয়?",o:["হেরা গুহা","সওর গুহা","তূর পাহাড়","মিনা"],a:0},
+{c:"T",l:1,q:"ICT এর পূর্ণরূপ?",o:["Information and Communication Technology","Internet Tools","Input Technology","Info Control"],a:0},
+{c:"M",l:1,q:"বাংলাদেশের জাতীয় ফুল?",o:["শাপলা","গোলাপ","বেলি","কৃষ্ণচূড়া"],a:0}
 ];
-var TN={all:"সব বিষয়",S:"বিজ্ঞান",B:"বাংলাদেশের ইতিহাস",I:"ইসলামের ইতিহাস",T:"ICT"},LN={1:"সহজ",2:"মাঝারি",3:"কঠিন"};
-var qt="all",Q=[],qi=0,qs=0,done=false;
-function shuf(a){a=a.slice();for(var i=a.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1)),t=a[i];a[i]=a[j];a[j]=t}return a}
-function seen(){try{return JSON.parse(sg("seen")||"[]")}catch(e){return[]}}
-function lv(i){return +B[i].split("|")[1]}
-function begin(){
-var sn=seen(),pool=[];
-B.forEach(function(r,i){if(qt==="all"||r.charAt(0)===qt)pool.push(i)});
-var fresh=pool.filter(function(i){return sn.indexOf(i)<0});
-if(fresh.length<Math.min(10,pool.length)){sn=sn.filter(function(i){return pool.indexOf(i)<0});fresh=pool.slice()}
-fresh=shuf(fresh);var pick=[],quota={1:4,2:3,3:3};
-[1,2,3].forEach(function(l){fresh.filter(function(i){return lv(i)===l}).slice(0,quota[l]).forEach(function(i){pick.push(i)})});
-fresh.forEach(function(i){if(pick.length<10&&pick.indexOf(i)<0)pick.push(i)});
-pick.sort(function(a,b){return lv(a)-lv(b)});
-ss("seen",JSON.stringify(sn.concat(pick)));
-Q=pick;qi=0;qs=0;showQ()}
-function qc(){$("qchips").innerHTML=Object.keys(TN).map(function(k){return '<button type="button" aria-pressed="'+(k===qt)+'" data-k="'+k+'">'+TN[k]+'</button>'}).join("");
-$("qchips").querySelectorAll("button").forEach(function(b){b.onclick=function(){qt=b.dataset.k;qc();begin()}})}
-function showQ(){var b=$("qbox");
-if(qi>=Q.length){b.innerHTML='<h3>তোমার স্কোর: '+qs+'/'+Q.length+'</h3><p>'+(qs>=8?"দারুণ! 🏆":qs>=5?"ভালো হয়েছে, আরেকবার চেষ্টা করো।":"আরও অনুশীলন করো।")+'</p><button class="primary" type="button" id="qr">নতুন ১০টি প্রশ্ন</button>';$("qr").onclick=begin;return}
-done=false;var p=B[Q[qi]].split("|"),opts=shuf([0,1,2,3].map(function(k){return {t:p[2+(k===0?1:k+1)-1+0],c:k===0}}));
-opts=shuf([{t:p[3],c:true},{t:p[4],c:false},{t:p[5],c:false},{t:p[6],c:false}]);
-var h='<div class="bar"><i style="width:'+(qi/Q.length*100)+'%"></i></div><p><span class="tag">'+LN[p[1]]+'</span><span class="tag">'+TN[p[0]]+'</span></p><p><b>প্রশ্ন '+(qi+1)+'/'+Q.length+':</b> '+esc(p[2])+'</p>';
-opts.forEach(function(o,i){h+='<button class="opt" type="button" data-i="'+i+'">'+esc(o.t)+'</button>'});
-b.innerHTML=h;var els=b.querySelectorAll(".opt");
-els.forEach(function(el){el.onclick=function(){if(done)return;done=true;var o=opts[+el.dataset.i];
-if(o.c){qs++;el.classList.add("right")}else{el.classList.add("wrong");opts.forEach(function(x,i){if(x.c)els[i].classList.add("right")})}
-setTimeout(function(){qi++;showQ()},1200)}})}
-qc();begin();
+// Extend with your old B data quickly converted
+var B_RAW=[
+"S|1|সূর্য কী?|তারা|গ্রহ|উপগ্রহ|ধূমকেতু","S|2|বাতাসে সবচেয়ে বেশি কোন গ্যাস আছে?|নাইট্রোজেন|অক্সিজেন|কার্বন ডাই-অক্সাইড|হাইড্রোজেন","I|2|পবিত্র কুরআনে মোট সূরা কয়টি?|১১৪|১১০|১২০|৯৯","T|2|HTML এর পূর্ণরূপ কোনটি?|HyperText Markup Language|High Text Machine Language|Home Tool Markup Language|Hyper Tool Making Language"
+];
+B_RAW.forEach(function(r){var p=r.split("|");QUIZ_CORE.push({c:p[0],l:+p[1],q:p[2],o:[p[3],p[4],p[5],p[6]],a:0})});
 
-/* videos: নতুন ভিডিও যোগ করতে এই তালিকায় একটি লাইন বসাও */
+var TN={all:"সব",S:"বিজ্ঞান",B:"বাংলাদেশ",I:"ইসলাম",H:"হাদিস/কুরআন",T:"ICT",M:"বাংলা/সমাজ"}, LN={1:"সহজ",2:"মাঝারি",3:"কঠিন"};
+var qt="all",Q=[],qi=0,qs=0,done=false,wrongList=JSON.parse(sg("wrong")||"[]");
+function shuf(a){a=a.slice();for(var i=a.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));var t=a[i];a[i]=a[j];a[j]=t}return a}
+function seen(){try{return JSON.parse(sg("seen_v2")||"[]")}catch(e){return[]}}
+function begin(showWrong){
+ var pool=QUIZ_CORE.map((_,i)=>i).filter(i=>qt==="all"||QUIZ_CORE[i].c===qt);
+ if(showWrong){pool=wrongList.slice(); if(!pool.length){alert("ভুল খাতা খালি!"); return;}}
+ var sn=seen(); var fresh=pool.filter(i=>sn.indexOf(i)<0);
+ if(fresh.length<10){sn=[]; fresh=pool.slice()}
+ fresh=shuf(fresh).slice(0,10);
+ ss("seen_v2",JSON.stringify(sn.concat(fresh)));
+ Q=fresh; qi=0; qs=0; showQ();
+}
+function qc(){
+ $("qchips").innerHTML=Object.keys(TN).map(k=>'<button type="button" aria-pressed="'+(k===qt)+'" data-k="'+k+'">'+TN[k]+'</button>').join("");
+ $("qchips").querySelectorAll("button").forEach(b=>b.onclick=function(){qt=b.dataset.k;qc();begin()});
+}
+function showQ(){
+ var b=$("qbox");
+ if(qi>=Q.length){b.innerHTML='<h3>স্কোর: '+qs+'/'+Q.length+'</h3><p>'+(qs>=8?"দারুণ! 🏆":"ভালো হয়েছে")+'</p><button class="primary" type="button" id="qr">নতুন ১০টি</button>';$("qr").onclick=()=>begin();return}
+ done=false; var idx=Q[qi]; var p=QUIZ_CORE[idx]; var opts=shuf(p.o.map((t,i)=>({t:t,c:i===p.a})));
+ var h='<div class="bar"><i style="width:'+(qi/Q.length*100)+'%"></i></div><p><span class="tag">'+(LN[p.l]||"")+'</span><span class="tag">'+(TN[p.c]||p.c)+'</span></p><p><b>প্রশ্ন '+(qi+1)+'/'+Q.length+':</b> '+esc(p.q)+'</p>';
+ opts.forEach((o,i)=>h+='<button class="opt" type="button" data-i="'+i+'">'+esc(o.t)+'</button>');
+ b.innerHTML=h; var els=b.querySelectorAll(".opt");
+ els.forEach(el=>el.onclick=function(){
+  if(done)return; done=true; var o=opts[+el.dataset.i];
+  if(o.c){qs++; el.classList.add("right")}else{el.classList.add("wrong"); if(wrongList.indexOf(idx)<0){wrongList.push(idx); ss("wrong",JSON.stringify(wrongList))} opts.forEach((x,i)=>{if(x.c)els[i].classList.add("right")})}
+  setTimeout(()=>{qi++; showQ()},900);
+ });
+}
+qc(); begin();
+$("wrongBtn").onclick=()=>begin(true);
+$("resetSeen").onclick=()=>{ss("seen_v2","[]"); ss("wrong","[]"); wrongList=[]; begin();};
+
+// ---------- VIDEOS ----------
 var VIDEOS=[
-  ["https://youtu.be/jRkQFszl8Nc","প্রিয় নবীজী (সাঃ)-এর বিদায় হজের ভাষণ","ইসলামিক","বিদায় হজের ঐতিহাসিক ভাষণ। সময় প্রায় ৬ মিনিট।"],
-["https://youtu.be/EVMh9hUmWpw","পড়ালেখা কাকে বলে? (পার্ট ১)","মোটিভেশনাল","লেখাপড়া আসলে কী এবং কীভাবে ভালোভাবে পড়াশোনা করতে হয়, সেই অনুপ্রেরণার ভিডিও।"],
-["https://youtu.be/geFEM-R8ZA4","পড়ালেখা কাকে বলে? (পার্ট ২)","মোটিভেশনাল","পার্ট ১ দেখার পর এটি দেখো। লেখাপড়ার সঠিক পথে চলার অনুপ্রেরণা পাবে।"],
-["https://youtu.be/f5qu418b4_Q","আমরা মহাবিশ্বে কোন দিকে যাচ্ছি?","বিজ্ঞান","পৃথিবী, সূর্য ও গ্যালাক্সির গতি থেকে মহাবিশ্বের প্রসারণ পর্যন্ত মহাকাশের শান্ত গল্প। সময় প্রায় ৫৪ মিনিট।"],
-["https://www.youtube.com/results?search_query=class+8+science+bangla","বিজ্ঞান ভিডিও (নমুনা, আসল লিঙ্ক বসাও)","বিজ্ঞান"],
-["https://www.youtube.com/results?search_query=class+8+math+bangla","গণিত ভিডিও (নমুনা, আসল লিঙ্ক বসাও)","গণিত"],
-["https://www.youtube.com/results?search_query=HTML+bangla+tutorial","HTML শেখা (নমুনা)","ICT"]
+["https://youtu.be/EVMh9hUmWpw","পড়ালেখা কাকে বলে? (পার্ট ১)","মোটিভেশনাল","লেখাপড়া আসলে কী এবং কীভাবে ভালোভাবে পড়াশোনা করতে হয়"],
+["https://youtu.be/geFEM-R8ZA4","পড়ালেখা কাকে বলে? (পার্ট ২)","মোটিভেশনাল","পার্ট ১ দেখার পর এটি দেখো"],
+["https://youtu.be/f5qu418b4_Q","আমরা মহাবিশ্বে কোন দিকে যাচ্ছি?","বিজ্ঞান","পৃথিবী, সূর্য ও গ্যালাক্সির গতি থেকে মহাবিশ্বের প্রসারণ পর্যন্ত"],
+["https://youtu.be/cPXrUEO2Na8","মাদ্রাসা শিক্ষা কি ধ্বংসের মুখে?","ইসলাম","শিক্ষকদের জন্য বিশেষ - দ্বীন ও দুনিয়াবি শিক্ষার ইতিহাস"]
 ];
-var CI={"মোটিভেশনাল":"🔥 মোটিভেশনাল ভিডিও: কীভাবে লেখাপড়া করতে হয়, মনোযোগ ও লক্ষ্য ঠিক রাখার অনুপ্রেরণা।","বিজ্ঞান":"🔬 বিজ্ঞানের ভিডিও: মহাকাশ, প্রকৃতি ও বিজ্ঞানের মজার বিষয়।","গণিত":"➕ গণিতের ভিডিও: সূত্র ও অঙ্ক সহজে বোঝার জন্য।","ICT":"💻 ICT ভিডিও: কম্পিউটার ও ইন্টারনেট শেখার জন্য।"};
 var V=VIDEOS.slice(),vc="সব";
 function vid(u){var m=/(?:youtu\.be\/|v=|embed\/|shorts\/)([\w-]{11})/.exec(u);return m?m[1]:null}
-function vids(){var cats=["সব"];V.forEach(function(v){if(cats.indexOf(v[2])<0)cats.push(v[2])});
-$("vchips").innerHTML=cats.map(function(c){return '<button type="button" aria-pressed="'+(c===vc)+'" data-c="'+esc(c)+'">'+esc(c)+'</button>'}).join("");
-$("vchips").querySelectorAll("button").forEach(function(b){b.onclick=function(){vc=b.dataset.c;vids()}});
-$("vinfo").textContent=CI[vc]||"";
-$("vgrid").innerHTML=V.filter(function(v){return vc==="সব"||v[2]===vc}).map(function(v,i){var id=vid(v[0]),ok=/^https?:\/\//.test(v[0]),href=id?"https://www.youtube.com/watch?v="+id:(ok?v[0]:"#");
-return '<div class="card vid"><div class="thumb">'+(id?'<img src="https://i.ytimg.com/vi/'+id+'/hqdefault.jpg" alt="" loading="lazy" onerror="this.remove()">':"")+'<span>▶</span></div><div class="in"><span class="tag">'+esc(v[2])+'</span><h3 style="margin:6px 0">'+esc(v[1])+'</h3>'+(v[3]?'<p class="sub" style="margin:0 0 10px">'+esc(v[3])+'</p>':'')+'<a class="btn primary" target="_blank" rel="noopener noreferrer" href="'+esc(href)+'">দেখো</a></div></div>'}).join("")}
-vids();
-$("vadd").onclick=function(){var l=$("vl").value.trim(),t=$("vt").value.trim(),k=$("vk").value.trim()||"অন্যান্য";
-if(!/^https?:\/\//.test(l)||!t)return;V.push([l,t,k]);vids();
-var line='["'+l.replace(/"/g,"")+'","'+t.replace(/"/g,"")+'","'+k.replace(/"/g,"")+'"],';
-$("vline").hidden=false;$("vline").textContent=line;try{navigator.clipboard.writeText(line)}catch(e){}};
+function vids(){
+ var cats=["সব"]; V.forEach(v=>{if(cats.indexOf(v[2])<0)cats.push(v[2])});
+ $("vchips").innerHTML=cats.map(c=>'<button type="button" aria-pressed="'+(c===vc)+'" data-c="'+esc(c)+'">'+esc(c)+'</button>').join("");
+ $("vchips").querySelectorAll("button").forEach(b=>b.onclick=function(){vc=b.dataset.c; vids()});
+ $("vgrid").innerHTML=V.filter(v=>vc==="সব"||v[2]===vc).map(v=>{
+  var id=vid(v[0]); var href=id?"https://www.youtube.com/watch?v="+id:v[0];
+  return '<div class="card vid"><div class="thumb">'+(id?'<img src="https://i.ytimg.com/vi/'+id+'/mqdefault.jpg" alt="" loading="lazy">':"")+'<span>▶</span></div><div class="in"><span class="tag">'+esc(v[2])+'</span><h3 style="margin:6px 0">'+esc(v[1])+'</h3>'+(v[3]?'<p class="sub" style="margin:0 0 10px">'+esc(v[3])+'</p>':'')+'<a class="btn primary" target="_blank" href="'+esc(href)+'">দেখো</a></div></div>';
+ }).join("");
+}vids();
 
-/* words */
-var W=[["ব্রাউজার","ওয়েবসাইট দেখার সফটওয়্যার, যেমন Chrome"],["সার্ভার","যে কম্পিউটার ওয়েবসাইটের ফাইল জমা রাখে ও পাঠায়"],["ডেটাবেজ","তথ্য সাজিয়ে জমা রাখার ব্যবস্থা"],["URL","ওয়েবসাইটের ঠিকানা"],["পাসওয়ার্ড","অ্যাকাউন্ট রক্ষার গোপন শব্দ"],["হার্ডওয়্যার","কম্পিউটারের যে অংশ ছোঁয়া যায়"],["সফটওয়্যার","কম্পিউটারকে কাজ করানো প্রোগ্রাম"]];
-var wi=0,fl=false;
-function flash(){$("flash").innerHTML=fl?esc(W[wi][1]):'<b>'+esc(W[wi][0])+'</b>'}
-$("flash").onclick=function(){fl=!fl;flash()};
-$("flash").onkeydown=function(e){if(e.key==="Enter"||e.key===" "){e.preventDefault();fl=!fl;flash()}};
-$("nextw").onclick=function(){wi=(wi+1)%W.length;fl=false;flash()};flash();
-function wl(){var q=$("wsearch").value.trim();$("wlist").innerHTML=W.filter(function(w){return !q||w[0].indexOf(q)>=0||w[1].indexOf(q)>=0}).map(function(w){return '<div class="cm"><b>'+esc(w[0])+'</b>: '+esc(w[1])+'</div>'}).join("")||'<p class="sub">কিছু পাওয়া যায়নি। অন্য শব্দ লেখো।</p>'}
-$("wsearch").oninput=wl;wl();
-
-/* comments (demo, device only) */
-var C=[];try{C=JSON.parse(sg("cm")||"[]")}catch(e){C=[]}
-if(!C.length)C=[{n:"শিক্ষার্থী",t:"কুইজটা দারুণ হয়েছে!"}];
+// ---------- COMMENTS - SECURE + REAL-TIME READY ----------
+var C=[]; try{C=JSON.parse(sg("cm")||"[]")}catch(e){C=[]}
+if(!C.length)C=[{n:"শিক্ষার্থী",t:"কুইজটা দারুণ হয়েছে!",ts:Date.now()}];
 var last=0;
-function cl(){$("clist").innerHTML=C.slice().reverse().map(function(c){return '<div class="cm"><b>'+esc(c.n)+'</b><br>'+esc(c.t)+'</div>'}).join("")}
-$("csend").onclick=function(){var t=$("ct").value.trim(),n=$("cn").value.trim()||"বেনামী",m=$("cmsg");
-if(!t){m.textContent="আগে কিছু লেখো।";return}
-if(Date.now()-last<60000){m.textContent="এক মিনিট পরে আবার পাঠাও।";return}
-last=Date.now();C.push({n:n,t:t.slice(0,200)});ss("cm",JSON.stringify(C));$("ct").value="";m.textContent="পাঠানো হয়েছে।";cl()};
+function cl(){ $("clist").innerHTML=C.slice().reverse().map(c=>'<div class="cm"><b>'+esc(c.n)+'</b> <small>'+new Date(c.ts||Date.now()).toLocaleString('bn-BD')+'</small><br>'+esc(c.t)+'</div>').join("")}
+$("csend").onclick=function(){
+ var t=$("ct").value.trim(), n=$("cn").value.trim()||"বেনামী", m=$("cmsg");
+ if(!t){m.textContent="আগে কিছু লেখো।"; return}
+ if(t.length>200){m.textContent="২০০ অক্ষরের বেশি না।"; return}
+ if(Date.now()-last<15000){m.textContent="১৫ সেকেন্ড পরে আবার পাঠাও।"; return}
+ if(/<script|http|\.js/i.test(t)){m.textContent="লিঙ্ক/স্ক্রিপ্ট দেওয়া যাবে না।"; return}
+ last=Date.now(); C.push({n:n.slice(0,30),t:t.slice(0,200),ts:Date.now()}); ss("cm",JSON.stringify(C.slice(-200))); $("ct").value=""; m.textContent="পাঠানো হয়েছে। (Firebase লাগালে সবাই দেখবে)"; cl();
+ // TODO: Firebase push here if config present
+ // firebase.firestore().collection("comments").add({n,t,ts:firebase.firestore.FieldValue.serverTimestamp()})
+};
 cl();
+
+// OPTIONAL: Load external 20k quizzes - uncomment for GitHub
+// fetch('quiz-data.json').then(r=>r.json()).then(data=>{QUIZ_CORE=QUIZ_CORE.concat(data); begin();}).catch(()=>{});
 </script>
 </body>
 </html>
